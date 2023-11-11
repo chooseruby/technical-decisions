@@ -17,7 +17,16 @@ Also most people that learn Ruby will do it through Rails so we can be a place w
 
 1. We will use mostly vanilla Rails => we will use Hotwire and not any other library. 
 2. We will write our views in ERB with the exception of components that will be in Phlex. 
-3. We will pick Propshafts, Importmaps and SQLite as defaults. 
+3. We will pick Propshafts, Importmaps and SQLite as defaults.
+
+# Testing
+
+We will use Minitest and try to use fixtures where it makes sense.
+
+The code in test should be:
+- simple, not smart
+- each test should include the preconditions (setup), assertions and post-conditions inside
+- do not dry tests, except for cases when we really really use something is so many tests
 
 # Gems
 
